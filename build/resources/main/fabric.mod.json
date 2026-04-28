@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "doorman",
+  "version": "1.2.9",
+  "name": "Esoteria",
+  "description": "Odin addon pack created by Lana.",
+  "authors": [],
+  "contact": {},
+  "license": "BSD-3-Clause",
+  "icon": "assets/esoteria/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.odtheking.doorman.DoormanAddon"
+      }
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.5",
+    "fabric-api": ">=0.138.4+1.21.10",
+    "minecraft": "~1.21.10",
+    "fabric-language-kotlin": ">=1.13.10+kotlin.2.3.20",
+    "odin": "*"
+  }
+}
