@@ -30,9 +30,9 @@ object Stars : Module(
     category = EsoteriaCategory.TAB,
     description = "Better vision for mobs currently in your room."
 ) {
-    private val enabledSetting by BooleanSetting("Highlight Starred Mobs", true, desc = "Highlights starred dungeon mobs.")
-    private val bats by BooleanSetting("Bats", true, desc = "Highlights bats in your current room.")
-    private val color by ColorSetting("Highlight Color", Colors.WHITE, true, desc = "The color of the highlight.")
+    private val enabledSetting by BooleanSetting("Starred Mobs", true, desc = "Marks starred dungeon mobs in your current room.")
+    private val bats by BooleanSetting("Bats", true, desc = "Marks secret-related bats in your current room.")
+    private val color by ColorSetting("Marker Color", Colors.WHITE, true, desc = "Color used for mob markers.")
     private val batColor by ColorSetting("Bat Color", Colors.MINECRAFT_AQUA, true, desc = "The color used for bats and bat tracer.")
     private val renderStyle by SelectorSetting("Render Style", "Outline", listOf("Filled", "Outline", "Filled Outline"), desc = "Style of the box.")
 

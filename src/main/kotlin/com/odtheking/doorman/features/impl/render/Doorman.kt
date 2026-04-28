@@ -29,7 +29,7 @@ object Doorman : Module(
     description = "Better vision for doors currently in your room."
 ) {
     private val style by SelectorSetting("Style", "Filled Outline", listOf("Filled", "Outline", "Filled Outline"), desc = "Door render style.")
-    private val color by ColorSetting("Color", Colors.MINECRAFT_GREEN.withAlpha(0.8f), true, desc = "Color of the door highlight.")
+    private val color by ColorSetting("Color", Colors.MINECRAFT_GREEN.withAlpha(0.8f), true, desc = "Color for door markers.")
 
     private enum class DoorType { NORMAL, WITHER, BLOOD }
     private enum class FairyDoorState { OPENED, LOCKED_NO_KEY, LOCKED_CAN_OPEN }
