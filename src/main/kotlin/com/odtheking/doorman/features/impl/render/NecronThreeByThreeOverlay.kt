@@ -20,7 +20,7 @@ object NecronThreeByThreeOverlay : Module(
     private val color by ColorSetting("Color", Colors.MINECRAFT_AQUA.withAlpha(0.45f), true, desc = "Overlay color.")
     private val style by SelectorSetting("Style", "Filled Outline", listOf("Filled", "Outline", "Filled Outline"), desc = "Render style.")
 
-    private val overlayBox = AABB(53.0, 64.0, 113.0, 56.0, 65.0, 116.0)
+    private val overlayBox = AABB(53.0, 63.0, 113.0, 56.0, 64.0, 116.0)
 
     init {
         on<RenderEvent.Extract> {

@@ -32,7 +32,7 @@ object Stars : Module(
 ) {
     private val enabledSetting by BooleanSetting("Starred Mobs", true, desc = "Marks starred dungeon mobs in your current room.")
     private val bats by BooleanSetting("Bats", true, desc = "Marks secret-related bats in your current room.")
-    private val color by ColorSetting("Marker Color", Colors.WHITE, true, desc = "Color used for mob markers.")
+    private val color by ColorSetting("Mob Color", Colors.WHITE, true, desc = "Color used for mob markers.")
     private val batColor by ColorSetting("Bat Color", Colors.MINECRAFT_AQUA, true, desc = "The color used for bats and bat tracer.")
     private val renderStyle by SelectorSetting("Render Style", "Outline", listOf("Filled", "Outline", "Filled Outline"), desc = "Style of the box.")
 
